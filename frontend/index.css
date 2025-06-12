@@ -1,0 +1,634 @@
+:root{
+ --cap: capitalize;
+}
+
+/* nav */
+.tr{
+    text-transform:var(--cap);
+    color:white;
+    font-weight:bolder;
+    font-size: larger;
+}
+.bg{
+   
+    background-image: url("OIP.jpg");
+   background-size: cover;
+    
+
+    margin: 0 auto;
+    padding:1vw;
+    height: 750px;
+}
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+   padding: auto;
+   height:10%;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 3px;
+    
+}
+
+.logo1{
+    width: 16vw;
+    height:4vw;
+}
+.product:hover .pitem{
+    position: absolute;
+    right: 9vw;
+    top:20px;
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.351);
+    border-width:1px 0px 1px 0px ;
+    border-color: white;
+    display: grid;
+    grid-template-columns: 13vw;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.pitem{
+    display: none;
+    position: absolute;
+}
+
+.menu:hover .menuitem{
+    position: absolute;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.379);
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.351);
+    border-width:1px 0px 1px 0px ;
+    border-color: white;
+    display: grid;
+    grid-template-columns: 13vw;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.menu{
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+.menuitem{
+    display: none;
+    
+}
+
+.menu:hover .product{
+    position: relative;
+}
+/* hero section */
+ .ti{
+    font-family:'Times New Roman';
+    color: white;
+    font-weight: bolder;
+    font-size: 6vw;
+ }
+
+ .fi{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    text-transform: capitalize;
+ }
+ .first{
+    background-color: rgb(255, 191, 0);
+   display: flex;
+   width:200px;
+   
+   align-items: center;
+   justify-content: center;
+    height: 50px;
+    border-radius:10%/ 50%;
+    
+ }
+ .buttons{
+    width: 60vw;
+    flex-shrink: 0;
+    display: flex;
+    margin-top:1vw;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ .hero{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+
+    justify-content: center;
+    
+    
+
+ }
+.title{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.summon{
+    position: relative;
+    left: 50vw;
+
+    
+}
+
+.hero2{
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 2100px;
+}
+
+.firstbox{
+    padding-top: 12px;
+    padding-left: 20px;
+    background-image: url("/frontend/OIP (1).jpg");
+    background-color: rgba(255, 255, 0, 0.24);
+    background-size: cover;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height:700px;
+}
+.title2{
+    height: 10vw;
+}
+
+.t2{
+    text-shadow:0.5px 0.5px 1px black;
+    display:flex;
+    color: white;
+    font-size:5vw;
+    font-weight: bolder;
+}  
+.about{
+    font-size: 20px;
+    text-shadow:0.5px 0.5px 1px black;
+    color: white;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+}
+
+.secondbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 0/1;
+    grid-row: 2/3;
+}
+.secondbox div img{
+    width: 100%;
+    height: 100%;
+}
+
+.sab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sp{
+    width: 70%;
+    text-transform: capitalize;
+    color: rgb(255, 191, 0);
+    font-family:sans-serif;
+    font-size:20px;
+    font-weight: bolder;
+}
+
+.slogo{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thirdbox{
+    grid-column: 2/4;
+    padding: 20px;
+    background-image: url("peoplecouch.webp");
+    background-size: cover;
+}
+
+.fourthbox{
+    background-image: url("R.jpg");
+    background-size: cover;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:end;
+    
+    padding-left: 20px;
+}
+
+.about1{
+    margin: 20px;
+    height: min-content;
+    width: 40%;
+}
+
+.ab{
+    color:white;
+    font-weight: bold;
+    font-size: larger;
+}
+.hero3{
+    display: none;
+}
+
+/* make */
+.make{
+    width: 100vw;
+    padding: 5vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 242, 242);
+    gap: 20px;
+}
+
+/* banner */
+
+.banner1{
+    position: relative;
+    right:0px;
+    height: 256px;
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    gap:10px;
+    
+    grid-template-columns: repeat(8 ,380px);
+    animation-name: b1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.banner2{
+    position: relative;
+    right: 100px;
+    height: 256px;
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    gap:10px;
+    
+    grid-template-columns:repeat(8 , 380px);
+    animation-name: b;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes b {
+    from{
+        right: 100px;
+    }
+    to{
+        right: 1660px;
+    }
+}
+
+@keyframes b1 {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 1560px;
+    }
+}
+
+.img{
+    height: 241px;
+    width: 370px;
+}
+
+.r1{
+    grid-row: 1/2;
+
+}
+
+.container{
+    height:35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20PX;
+
+}
+
+.titi{
+    font-size: 4vH;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.bto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 5vh;
+    background-color:rgb(255, 191, 0);
+    border-radius: 10%/50%;
+}
+
+.nolink{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    
+
+}
+
+.testimoni{
+    width: 100%;
+    height: 140vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+.ftesti{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.ttesti{
+    grid-row: 1/3;
+    grid-column: 2/4;
+    background-image: url("Image_Blog_Blast_Unexpected-Ecology.jpg");
+    background-size: cover;
+    padding: 15px;
+}
+
+.trtesti{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color:rgb(255, 191, 0) ;
+    
+}
+
+.frtesti{
+    display: none;
+}
+
+.fimg{
+    width: 100%;
+    height: 60%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+}
+
+
+
+
+
+
+/* md-hero */
+@media (max-width:900px) {
+    .hero2{
+     display: none;
+            }
+
+   .hero3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1.1fr 1fr 1fr;
+    height: 1800px;
+   }
+ 
+   
+   .box1{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .bg1{
+        margin-bottom: 10px;
+        padding-left: 20px ;
+        display: flex;
+        align-items: end;
+        height: 60%;
+        background-image: url("OIP (1).jpg");
+        background-size: cover;
+    }
+    .ti1{
+        font-size: 10vw;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .ab1{
+        color:black;
+        height: 40%;
+        text-align: justify;
+        font-weight: 400;
+        font-size: 19px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg2{
+        
+        padding-left: 20px ;
+        display: flex;
+        align-items: end;
+        height: 60%;
+        background-image: url("peoplecouch.webp");
+        background-size: cover;
+    }
+
+    .bg3{
+        margin-bottom: 10px;
+        padding-left: 20px ;
+        display: flex;
+        align-items: end;
+        height: 60%;
+        background-image: url("R.jpg");
+        background-size: cover;
+    }
+    .make{
+        padding: 5vw;
+        height: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:start;
+        background-color: rgb(245, 242, 242);
+    }
+    .mtitle{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:590px) {
+    .bg1{
+        height: 50%;
+
+    }
+    .ab1{
+        font-size: 14px;
+        color:black;
+        height: 40%;
+        text-align: justify;
+        font-weight: 400;
+        
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .make{
+        height: 45vh;
+        width: 100%;
+    }
+
+    .banner1{
+        height: 130px;
+        display: grid;
+        grid-template-columns: repeat(8,200px);
+        grid-template-rows: 130px;
+        animation-duration: 20s;
+    }
+    .banner2{
+        height: 130px;
+        display: grid;
+        grid-template-columns: repeat(8,200px);
+        grid-template-rows: 130px;
+        animation-duration: 20s;
+    }
+
+    @keyframes b {
+        from{
+            right: 100px;
+        }
+        to{
+            right: 940px;
+        }
+    }
+    
+    @keyframes b1 {
+        from{
+            right: 0px;
+        }
+        to{
+            right: 840px;
+        }
+    }
+
+    .img{
+        width: 190px;
+        height: 121px;
+    }
+   
+    
+   }
+
+@media (max-width:832px){
+
+.bg{
+    background-size: cover;
+    margin: 0 auto;
+    padding:1vw;
+    height: 600px;  
+}
+    /* nav */
+    .logo1{
+        width: 20vw;
+        height:8vw;
+        margin-left: 20%;
+    }
+    .tr{
+        text-transform:var(--cap);
+        color:white;
+        font-weight:bolder;
+        font-size: 3vw;
+    }
+    /* hero */
+    .hero{
+        height:70vh;
+        justify-content: end;
+        align-items: center;
+    }
+    .title{
+        width: 50%;
+    }
+
+    .ti{
+   font-size: 10vh;
+   line-height: 95%;
+   font-family: sans-serif;
+   font-weight: 680;
+   height: 50%;
+
+   text-align: center;
+    }
+
+   .buttons{ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    width:80vw;
+    height: 40%;
+
+   }
+   
+   .first{
+
+    width:100%;
+    height: 6vw;
+    margin:2%;
+    border-radius: 5% /50%;
+   
+    }
+
+   .fi{
+
+    font-size: large;
+     
+
+   }
+
+
+}
+
+
