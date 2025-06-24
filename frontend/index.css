@@ -6,14 +6,16 @@
 }
 .P{
     font-family: proxima-nova, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     
 }
 
 h1{
     font-family: oswald, sans-serif;
 }
+
 /* nav */
+
 .tr{
     text-transform:var(--cap);
     color:white;
@@ -22,7 +24,7 @@ h1{
 }
 .bg{
    
-    background-image: url("OIP.jpg");
+    background-image: url("photos/OIP.jpg");
    background-size: cover;
     
 
@@ -35,8 +37,9 @@ h1{
     display: flex;
     justify-content: space-between;
     position: sticky;
-   padding: auto;
-   height:10%;
+   padding-left: 2%;
+   
+   height:8vh;
     
 }
 
@@ -52,50 +55,88 @@ h1{
     width: 16vw;
     height:4vw;
 }
-.product:hover .pitem{
-    position: absolute;
-    right: 9vw;
-    top:20px;
-    border: solid;
-    background-color: rgba(0, 0, 0, 0.351);
-    border-width:1px 0px 1px 0px ;
-    border-color: white;
-    display: grid;
-    grid-template-columns: 13vw;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
+
+.dropdowns{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    gap: 15%;
+    margin-right: 15px;
 }
-.pitem{
-    display: none;
-    position: absolute;
+.pdrp{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.textpara1{
+    font-size: 1.4vw;
+    margin: 0;
 }
 
-.menu:hover .menuitem{
-    position: absolute;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.379);
-    border: solid;
-    background-color: rgba(0, 0, 0, 0.351);
-    border-width:1px 0px 1px 0px ;
-    border-color: white;
-    display: grid;
-    grid-template-columns: 13vw;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
+.plink{
+    display: flex;
+    gap: 5%;
+    align-items: center;
 }
-.menu{
-    margin-top: 1vw;
-    margin-right: 1vw;
+/* product */
+
+ .drop{
+    padding: 2px;
+    top:4vh;
+    left:-6vw;
+    height: 50vh; 
+    padding: 3vw;
+    width: 25vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
+    background-color: rgba(78, 76, 76, 0.848);
+   clip-path: polygon(0 100%, 100% 100%, 100% 2%, 51% 2%, 48% 0%, 45% 2%, 0 2%);
+   border-radius: 17px 17px 6px 6px;
 }
 
-.menuitem{
+.drop2{
     display: none;
     
+} 
+
+.nobt{
+    background-color: rgba(186, 25, 25, 0);
+    border:none;
 }
 
-.menu:hover .product{
-    position: relative;
+
+.fdorp{
+    
+    width: 80%;
 }
+
+
+.texthead{
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.textpara{
+    font-size: 1vw;
+    margin: 0;
+}
+
+.y{
+    color:rgb(255, 191, 0) ;
+}
+
+.w{
+    color: white;
+}
+
+/* nav end */
+
+
 /* hero section */
  .ti{
     
@@ -160,6 +201,13 @@ h1{
     
 }
 
+/* hero large end */
+
+
+
+
+/* hero2 large start  */
+
 .hero2{
     display: grid;
     grid-template-rows: repeat(3 , 1fr);
@@ -170,7 +218,7 @@ h1{
 .firstbox{
     padding-top: 12px;
     padding-left: 20px;
-    background-image: url("/frontend/OIP (1).jpg");
+    background-image: url("photos/OIP (1).jpg");
     background-color: rgba(255, 255, 0, 0.24);
     background-size: cover;
     grid-column: 1/4;
@@ -185,6 +233,7 @@ h1{
 }
 
 .t2{
+    margin: 0;
     text-shadow:0.5px 0.5px 1px black;
     display:flex;
     color: white;
@@ -241,12 +290,12 @@ h1{
 .thirdbox{
     grid-column: 2/4;
     padding: 20px;
-    background-image: url("peoplecouch.webp");
+    background-image: url("photos/peoplecouch.webp");
     background-size: cover;
 }
 
 .fourthbox{
-    background-image: url("R.jpg");
+    background-image: url("photos/R.jpg");
     background-size: cover;
     grid-column: 1/4;
     display: flex;
@@ -258,7 +307,7 @@ h1{
 }
 
 .about1{
-    margin: 20px;
+    margin-bottom: 10px;
     height: min-content;
     width: 40%;
     font-size: 1.1vw;
@@ -274,9 +323,13 @@ h1{
     display: none;
 }
 
-/* make */
+/* hero2 large end */
+
+
+
+/* make large start */
 .make{
-    width: 100vw;
+    width: 89vw;
     padding: 5vw;
     height: 20vw;
     display: flex;
@@ -292,7 +345,11 @@ h1{
     font-size: 1.5vw;
 }
 
-/* banner */
+/* make large end */
+
+
+
+/* moving banner large start*/
 
 .banner1{
     position: relative;
@@ -351,6 +408,14 @@ h1{
 
 }
 
+/* moving banner large end */
+
+
+
+
+
+/* 
+join container */
 .container{
     height:35vh;
     display: flex;
@@ -365,6 +430,7 @@ h1{
     font-family: proxima-nova, sans-serif;
     font-size: 4vH;
     font-weight: bold;
+    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -393,7 +459,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    font-family: proxima-nova, sans-serif;
+    
 
 }
 .ftesti{
@@ -405,7 +471,7 @@ h1{
     font-family: inherit;
     grid-row: 1/3;
     grid-column: 2/4;
-    background-image: url("Image_Blog_Blast_Unexpected-Ecology.jpg");
+    background-image: url("photos/Image_Blog_Blast_Unexpected-Ecology.jpg");
     background-size: cover;
     padding: 15px;
 }
@@ -440,9 +506,9 @@ h1{
 
 }
 
-.btn{
+.lbtn{
     display: flex;
-    flex-direction: row;
+    width: 20vh;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -450,29 +516,52 @@ h1{
     border-radius:20%/80%;
     border-style: solid;
     border-color: white;
-    height: 30px;
-
-
-    
+    height: 35px;
 }
 
 .btnbox{
     display: flex;
-    flex-direction: row;
     gap: 20px;
+}
+
+.lhead{
+    font-size: 3.3vw;
+    color: white;
+}
+
+.testimoni2 {
+    display: none;
+}
+
+.mdtesti{
+    display: none;
+}
+
+.tail{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    
+
+    justify-content: center;
+    gap: 10px;
+
+}
+.tailco{
+    margin: 0;
 }
 
 
 
 
-
-/* md- */
+/* css for sm an md devices start- */
 @media (max-width:900px) {
     .hero2{
      display: none;
             }
 
    .hero3{
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:1.1fr 1fr 1fr;
@@ -481,6 +570,7 @@ h1{
  
    
    .box1{
+        width: 100vw;
         display: flex;
         flex-direction: column;
     
@@ -492,13 +582,14 @@ h1{
         display: flex;
         align-items: end;
         height: 60%;
-        background-image: url("OIP (1).jpg");
+        background-image: url("photos/OIP (1).jpg");
         background-size: cover;
     }
     .ti1{
         font-size: 5rem;
         color: white;
         font-weight: 400;
+        margin: 0;
     }
 
     .ab1{
@@ -520,7 +611,7 @@ h1{
         display: flex;
         align-items: end;
         height: 60%;
-        background-image: url("peoplecouch.webp");
+        background-image: url("photos/peoplecouch.webp");
         background-size: cover;
     }
 
@@ -530,10 +621,11 @@ h1{
         display: flex;
         align-items: end;
         height: 60%;
-        background-image: url("R.jpg");
+        background-image: url("photos/R.jpg");
         background-size: cover;
     }
     .make{
+        width: 100vw;
         padding: 5vw;
         height: 40vw;
         display: flex;
@@ -545,7 +637,127 @@ h1{
     .mtitle{
         margin-bottom: 15px;
     }
+    .mabout{
+        font-size: 2.5vw;
+        text-align: start;
+    }
+
+
+    .nolink{
+        font-size: 70%;
+    }
+
+    /* responsive testimone */
+
+  .testimoni{
+    display: none;
+  }
+
+  .testimoni2{
+    width: 100vw;
+    height: 280vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
 }
+
+.testi1{
+    height: 90vh;
+    grid-row: 1/2;
+    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.ingbox{
+    height: 75%;
+    background-image: url("photos/Image_Blog_Blast_Unexpected-Ecology.jpg");
+    background-size: cover;
+    display: flex;
+    padding-left: 5%;
+    align-items: end;
+    color: white;
+    
+
+}
+.ingd{
+    line-height: 25px;
+    height: 25%;
+    margin:3% ;
+
+}
+.testi2{
+    overflow: hidden;
+    grid-row: 2/3;
+    
+    
+}
+.flx{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgbox{
+    height: 60vh;
+    width: 100%;
+    
+
+    
+}
+
+.des{
+    color: rgb(255, 191, 0);
+    padding: 3%;
+    margin: 0;
+}
+.auth{
+    display: flex;
+    gap: 2%;
+    padding: 3%;
+    font-size: small;
+    font-weight: bold;
+    color: rgba(117, 111, 111, 0.659);
+    align-items: center;
+}
+
+.auname{
+    margin: 0;
+}
+.testi3{
+    
+    height: 30%;
+    grid-row: 3/4;
+    height: 100%;
+}
+
+.imgbox2{
+    
+    height: 55vh;
+    width: 100%;
+}
+
+.mdtesti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color:rgb(255, 191, 0);
+    gap: 10px;
+}
+.btnbox{
+
+    flex-direction: column;
+    gap: 10px;
+    font-size: 70%;
+}
+}
+
+/*css for md devices end */
+
+/* responsive banner */
 
 @media (max-width:590px) {
     .bg1{
@@ -608,12 +820,15 @@ h1{
         width: 190px;
         height: 121px;
     }
+    
    
     
    }
 
+/* responsive banner css end */
 
 
+/* responsive hero1 css start */
 
 @media (max-width:790px){
 
@@ -685,5 +900,5 @@ h1{
 
 
 }
-
+/* responsive hero 1 css end */
 
