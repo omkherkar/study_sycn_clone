@@ -1,0 +1,21 @@
+{
+  "name": "2nd-proj",
+  "version": "1.0.0",
+  "description": "clone of study sync website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omkherkar/study_sycn_clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/omkherkar/study_sycn_clone/issues"
+  },
+  "homepage": "https://github.com/omkherkar/study_sycn_clone#readme"
+}
