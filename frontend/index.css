@@ -772,10 +772,11 @@ join container */
         background-color: rgb(245, 242, 242);
     }
     .mtitle{
+        
         margin-bottom: 15px;
     }
     .mabout{
-        font-size: 2.5vw;
+        font-size: 1rem;
         text-align: start;
     }
 
@@ -978,9 +979,9 @@ join container */
 }
     /* nav */
     .logo1{
-        width: 20vw;
-        height:8vw;
-        margin-left: 20%;
+        width: 35vw;
+        height:10vw;
+        margin-left: 10%;
     }
     .tr{
         text-transform:var(--cap);
@@ -1014,7 +1015,7 @@ join container */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:3px;
+    gap:10%;
     width:80vw;
     height: 40%;
 
@@ -1023,7 +1024,7 @@ join container */
    .first{
 
     width:100%;
-    height: 6vw;
+    height: 20%;
     margin:2%;
     border-radius: 5% /50%;
    
@@ -1031,7 +1032,7 @@ join container */
 
    .fi{
 
-    font-size: large;
+    font-size: 1rem;
      
 
    }
