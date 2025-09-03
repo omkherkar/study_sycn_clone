@@ -683,6 +683,16 @@ join container */
 
 /* css for sm an md devices start- */
 @media (max-width:900px) {
+   .pdrp-n{
+    display: none;
+   }/* hide menu comphany and products */
+ 
+   
+    
+   .menudrop{
+        width:100vw;
+   }
+   
     .hero2{
      display: none;
             }
@@ -713,7 +723,7 @@ join container */
         background-size: cover;
     }
     .ti1{
-        font-size: 5rem;
+        font-size: 3rem;
         color: white;
         font-weight: 400;
         margin: 0;
@@ -887,6 +897,7 @@ join container */
 /* responsive banner */
 
 @media (max-width:590px) {
+    
     .bg1{
         height: 50%;
 
@@ -988,7 +999,7 @@ join container */
     }
 
     .ti{
-   font-size: 10vw;
+   font-size: 3.5rem;
    line-height: 95%;
    font-family: sans-serif;
    font-weight: 680;
